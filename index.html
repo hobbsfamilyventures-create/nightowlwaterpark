@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Night Owl Waterpark • Booneville, KY</title>
+  <meta name="description" content="Night Owl Waterpark — Big fun, close to home. Opening Spring 2027 in Booneville, Kentucky.">
+  <style>
+    :root{
+      --night:#0A2342; --aqua:#39c5ff; --gold:#B89E2B; --text:#E6F0FF;
+    }
+    html,body{margin:0;padding:0;height:100%;background:var(--night);color:var(--text);
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial;}
+    .wrap{min-height:100%;display:flex;flex-direction:column}
+    header{padding:16px 24px;border-bottom:1px solid rgba(255,255,255,.08);
+      display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:12px;align-items:center;font-weight:700;letter-spacing:.2px}
+    .brand .owl{font-size:28px}
+    .badge{background:rgba(57,197,255,.15);border:1px solid rgba(57,197,255,.35);
+      color:#CFF2FF;font-weight:600;padding:4px 10px;border-radius:999px;font-size:12px}
+    .hero{position:relative;padding:64px 24px;overflow:hidden}
+    .hero-inner{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:1.1fr .9fr;
+      gap:28px;align-items:center}
+    @media (max-width:900px){.hero-inner{grid-template-columns:1fr}}
+    h1{font-size:clamp(32px,5vw,54px);line-height:1.06;margin:0 0 12px}
+    p.lead{font-size:clamp(16px,2.5vw,20px);opacity:.9;margin:0 0 24px}
+    .cta{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:12px 18px;border-radius:12px;text-decoration:none;font-weight:700}
+    .btn-primary{background:var(--aqua);color:#052538}
+    .btn-outline{border:1px solid rgba(255,255,255,.25);color:var(--text)}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.03));
+      border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:18px}
+    .features{background:rgba(255,255,255,.03);padding:36px 24px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:1000px;margin:0 auto}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}}
+    .moon{position:absolute;width:520px;height:520px;right:-120px;top:-120px;
+      background:radial-gradient(closest-side,rgba(255,255,255,.18),rgba(255,255,255,0));border-radius:50%}
+    .waves{position:absolute;inset:0;pointer-events:none;background:
+      radial-gradient(1000px 400px at 70% -10%, rgba(57,197,255,.10), transparent 60%),
+      radial-gradient(800px 600px at -20% 120%, rgba(255,255,255,.06), transparent 60%)}
+    footer{padding:24px;border-top:1px solid rgba(255,255,255,.08);text-align:center;font-size:14px;opacity:.85}
+    small.muted{opacity:.75}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand"><span class="owl">🦉</span> <span>Night Owl Waterpark</span></div>
+      <span class="badge">Opening Spring 2027</span>
+    </header>
+
+    <section class="hero">
+      <div class="moon" aria-hidden="true"></div>
+      <div class="waves" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <div>
+          <h1>Big fun, close to home.</h1>
+          <p class="lead">A family-owned indoor waterpark in Booneville, Kentucky—built so local families can make joyful memories without long drives or high costs.</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="mailto:hobbsfamilyventures@gmail.com?subject=Night%20Owl%20Waterpark%20Updates&body=Please%20add%20me%20to%20the%20updates%20list.">Join the update list</a>
+            <a class="btn btn-outline" href="mailto:hobbsfamilyventures@gmail.com">Contact</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3 style="margin:0 0 8px;">Phase 1 Highlights</h3>
+          <ul style="margin:0; padding-left:18px; line-height:1.7;">
+            <li><strong>Night Owl Falls</strong> — signature slide experience</li>
+            <li><strong>Owl’s Nest Adventure Tower</strong> — multi-level with tipping bucket</li>
+            <li><strong>Wave Pool + Café</strong> — relax & recharge</li>
+          </ul>
+          <div style="margin-top:14px;"><small class="muted">Follow along as we build. Locally owned by the Hobbs family.</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="grid">
+        <div class="card"><h4>Community</h4><p>Created for Eastern Kentucky families to have memorable fun close to home.</p></div>
+        <div class="card"><h4>Comfort</h4><p>Warm “night lodge” vibe with soft lighting and cozy gathering spaces.</p></div>
+        <div class="card"><h4>Value</h4><p>Our mission is simple: unforgettable family time that doesn’t break the bank.</p></div>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Night Owl Waterpark · Hobbs Family Ventures LLC · Booneville, KY
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
